@@ -92,6 +92,90 @@ someParallelogram.areaOfParallelogram
 
 //report on the area?
 print(someParallelogram.areaOfParallelogramDescription)
+
+
+
+
+//Define a Square based pyramid
+struct SquareBasedPyramid {
+    
+    //MARK: Properties
+    var radius: Double
+    var height: Double
+    
+    //Computed Property to return the raw volume
+    
+    var volumeOfSquareBasedPyramid: Double {
+        return 1 / 3 * Double.pi * pow(radius, 2) * height
+    }
+    
+    var volumeOfSquareBasedPyramidDescription: String {
+        return "the volume of the square Based Pyramid is " + String(format: "%.1f", volumeOfSquareBasedPyramid) + " square units."
+    }
+    
+}
+
+//Create a square based pyramid instance
+var someSquareBasedPyramid = SquareBasedPyramid(radius: 4, height: 6)
+
+//What is the volume?
+someSquareBasedPyramid.volumeOfSquareBasedPyramid
+
+print(someSquareBasedPyramid.volumeOfSquareBasedPyramidDescription)
+
+
+//Define a sphere
+struct Sphere {
+    
+    //MARK: Properties
+    var radius: Double
+    
+    //Computed Property to return the raw Volume
+    
+    var volumeOfSphere: Double {
+        return 4 / 3 * Double.pi * pow(radius, 3)
+        
+    }
+    
+    var volumeOfSphereDescription: String {
+        return "the volume of the Sphere is " + String(format: "%.1f", volumeOfSphere) + " square units."
+        
+        
+        
+    }
+    
+    
+    
+}
+
+//Create a sphere instance
+var someSphere = Sphere(radius: 4)
+
+//What is the Volume?
+someSphere.volumeOfSphere
+
+//report on the volume
+print(someSphere.volumeOfSphereDescription)
+
+
+
+
+
+    
+        
+        
+        
+    
+    
+    
+
+
+
+
+
+
+
+
 /*:
  [Previous: Area Example - Rectangle](@previous) | Page 4
  */
