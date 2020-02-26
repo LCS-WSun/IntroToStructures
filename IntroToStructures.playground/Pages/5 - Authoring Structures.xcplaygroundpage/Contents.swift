@@ -64,6 +64,34 @@ print(someCircle.areaOfCircleDescription)
 
 
 
+
+//Define a Parallelogram
+struct Parallelogram {
+    
+    //MARK: Properties
+    var base: Double
+    var height: Double
+    
+    //Computed Property to return the raw area
+    
+    var areaOfParallelogram: Double {
+        return base * height
+    }
+    
+    var areaOfParallelogramDescription: String {
+        return "the area of the parallelogram is " + String(format: "%.1f", areaOfParallelogram) + " square units."
+    }
+    
+}
+
+//Create a parallelogram instance
+var someParallelogram = Parallelogram(base: 2 , height: 4)
+
+//What is the area?
+someParallelogram.areaOfParallelogram
+
+//report on the area?
+print(someParallelogram.areaOfParallelogramDescription)
 /*:
  [Previous: Area Example - Rectangle](@previous) | Page 4
  */
