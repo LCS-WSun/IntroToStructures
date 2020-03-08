@@ -100,13 +100,13 @@ print(someParallelogram.areaOfParallelogramDescription)
 struct SquareBasedPyramid {
     
     //MARK: Properties
-    var radius: Double
+    var base: Double
     var height: Double
     
     //Computed Property to return the raw volume
     
     var volumeOfSquareBasedPyramid: Double {
-        return 1 / 3 * Double.pi * pow(radius, 2) * height
+        return 1 / 3 * pow(base, 2) * height
     }
     
     var volumeOfSquareBasedPyramidDescription: String {
@@ -116,7 +116,7 @@ struct SquareBasedPyramid {
 }
 
 //Create a square based pyramid instance
-var someSquareBasedPyramid = SquareBasedPyramid(radius: 4, height: 6)
+var someSquareBasedPyramid = SquareBasedPyramid(base: 4, height: 6)
 
 //What is the volume?
 someSquareBasedPyramid.volumeOfSquareBasedPyramid
