@@ -124,6 +124,8 @@ someSquareBasedPyramid.volumeOfSquareBasedPyramid
 print(someSquareBasedPyramid.volumeOfSquareBasedPyramidDescription)
 
 
+
+
 //Define a sphere
 struct Sphere {
     
@@ -140,10 +142,7 @@ struct Sphere {
     var volumeOfSphereDescription: String {
         return "the volume of the Sphere is " + String(format: "%.1f", volumeOfSphere) + " square units."
         
-        
-        
     }
-    
     
     
 }
@@ -160,9 +159,37 @@ print(someSphere.volumeOfSphereDescription)
 
 
 
+//Defining a cone
+struct Cone {
+
+    //MARK: Properties
+    var height: Double
+    var radius: Double
+    
+    //Computed property to return the raw value
+    var volumeOfCone: Double {
+        return 1 / 3 * Double.pi * pow(radius, 2 ) * height
+        
+    }
+    
+    var volumeOfConeDescription: String {
+        return "the volume of the cone is " + String(format: "%.1f", volumeOfCone) + " square units."
+    }
+    
 
     
-        
+}
+
+//Create a cone instance
+var someCone = Cone(height: 4 , radius: 2)
+
+//What is the volume?
+someCone.volumeOfCone
+
+//Report on the volume
+someCone.volumeOfCone
+
+print(someCone.volumeOfConeDescription)
         
         
     
