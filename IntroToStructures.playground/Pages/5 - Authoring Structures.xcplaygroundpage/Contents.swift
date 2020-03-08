@@ -191,10 +191,56 @@ someCone.volumeOfCone
 
 print(someCone.volumeOfConeDescription)
         
+    
+
+// Structure of Triangle (2D shape) do not understand how to do it properly 
+
+//struct Triangle {
+   // var description: String
+   // var areaOfTriangle: Double
+   // var perimeterOfTriangle: Double
+   // var a: Double
+   // var b: Double
+   // var c: Double
+  //  var base: Double
+   // var height: Double
+    
+// Computed property to return the raw value
+   // var perimeterOfTriangle: Double {
+   // return a + b + c
+  //  }
+  //  var areaOfTriangle: Double }
+   // return 1 / 2 * base * height
+  //  }
+
+   // var areaOfTriangle: String {
+      // return "the area of a triangle " + String(format: "%.1f", areaOfTriangle + "square units ."
+   // }
+ 
+//var perimeterOfTriangle: String {
+       // return "the perimeter of a triangle " + String(format: "%.1f", perimeterOfTriangle + "square units .")
+       // }
+
+//}
+
+//Create a Triangle instance
+
+//varSomeTriangle = Triangle(base: 2 , height: 4)
+//varSomeTriangle = Triangle(a: 3, b: 4, c: 5 )
+
+//What is the area and perimter?
+//someTriangle.areaOfTriangle
+//someTriangle.perimeterOfTriangle
+
+//Report on the area and perimeter
+//someTriangle.areaOfTriangle
+//someTriangle.perimterOfTriangle
+
+//print(someTriangle.areaOfTriangleDescription)
+//print(someTriangle.perimeterOfTriangle)
         
-    
-    
-    
+
+
 
 
 
